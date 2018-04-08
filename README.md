@@ -14,7 +14,7 @@ from project root run this
 
 ```
 git clone git@github.com:hanovruslan/bash-dep.git src/bash-dep \
-&& ./src/bash-dep/add-bgo.sh
+&& ./src/bash-dep/add.sh ${PWD}/src/bash-get-options-env.sh
 ```
 
 ###  Commands ###

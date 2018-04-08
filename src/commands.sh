@@ -1,3 +1,4 @@
+#@IgnoreInspection BashAddShebang
 ua_cmd_display () {
     echo '${UA_ADMIN_BINARY} --display ${ua_binary}' \
     | envsubst '$UA_ADMIN_BINARY'

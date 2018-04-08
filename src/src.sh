@@ -1,20 +1,4 @@
-# firefox_dir=/usr/share/firefox \
-# && firefox_link=/usr/bin/firefox \
-# && versions=( '42.0b9' '54.0.1' ) \
-# && mkdir -p ${firefox_dir} \
-# && cd ${firefox_dir} \
-# && for i in ${!versions[@]}
-# do
-# mkdir -p ./${versions[$i]} \
-# && wget -nc https://ftp.mozilla.org/pub/firefox/releases/${versions[$i]}/linux-x86_64/en-US/firefox-${versions[$i]}.tar.bz2 \
-# && tar jxf firefox-${versions[$i]}.tar.bz2 -C ./${versions[$i]} --strip 1 \
-# && update-alternatives --install ${firefox_link} firefox ${firefox_dir}/${versions[$i]}/firefox-bin $(( ${#versions[@]} - ${i} ))
-# done \
-# && update-alternatives --set firefox ${firefox_dir}/${versions[0]}/firefox-bin
-
-# # # run this to set up 54.0.1 as current firefox version
-# # update-alternatives --set firefox /usr/share/firefox/54.0.1/firefox-bin
-
+#@IgnoreInspection BashAddShebang
 ua_show () {
     local ua_binary=${1}
     export ua_binary

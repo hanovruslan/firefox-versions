@@ -1,3 +1,4 @@
+#@IgnoreInspection BashAddShebang
 export UA_BINARY='firefox'
 export UA_BINARY_BIN='firefox-bin'
 export UA_BINARY_PATH='/usr/bin/firefox'
